@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74F386C3-8E91-3EA5-89B3-D027895ABB97}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gtest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\.;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\googletest\include;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\gtest\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\.;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\googletest\include;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\gtest\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\.;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\googletest\include;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\gtest\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\.;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\contrib\zlib;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\googletest\include;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest\gtest\include;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -HC:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1 -BC:/Users/Matt/Documents/NetBeansProjects/AssimpBuild --check-stamp-file C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\cmake-modules\AddGTest.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindThreads.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt.in;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -HC:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1 -BC:/Users/Matt/Documents/NetBeansProjects/AssimpBuild --check-stamp-file C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\cmake-modules\AddGTest.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindThreads.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt.in;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -HC:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1 -BC:/Users/Matt/Documents/NetBeansProjects/AssimpBuild --check-stamp-file C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\cmake-modules\AddGTest.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindThreads.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt.in;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -HC:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1 -BC:/Users/Matt/Documents/NetBeansProjects/AssimpBuild --check-stamp-file C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\cmake-modules\AddGTest.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindThreads.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\ExternalProject.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\RepositoryInfo.txt.in;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt.in;C:\Users\Matt\Documents\NetBeansProjects\assimp-3.3.1\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-download-Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-download.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\gtest-gitinfo.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-download-Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-download.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\gtest-gitinfo.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-download-MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-download.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\gtest-gitinfo.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-download-RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-download.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\gtest-gitinfo.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp/gtest-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-update.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp/gtest-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-update.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp/gtest-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-update.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/tmp/gtest-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-update.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-patch.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-patch.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-patch.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-patch.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing configure step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-configure-Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-configure.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing configure step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-configure-Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-configure.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing configure step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-configure-MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-configure.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing configure step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-configure-RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-configure.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\tmp\gtest-cfgcmd.txt;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing build step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-build-Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-build.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing build step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-build-Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-build.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing build step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-build-MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-build.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing build step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -Dconfig=$(Configuration) -P C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/gtest-build-RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-build.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\37b9fb83fdf25eb87b9a03200bf98955\gtest-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-install.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-install.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-install.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-install.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\fd50dc59001f1634dae5799d75c9ea55\gtest-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)/gtest-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/fd50dc59001f1634dae5799d75c9ea55/gtest-complete.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)/gtest-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/fd50dc59001f1634dae5799d75c9ea55/gtest-complete.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)/gtest-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/fd50dc59001f1634dae5799d75c9ea55/gtest-complete.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'gtest'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E make_directory C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/$(Configuration)/gtest-complete
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Matt\Documents\NetBeansProjects\cmake-3.9.1-win64-x64\bin\cmake.exe -E touch C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/gtest/src/gtest-stamp/$(Configuration)/gtest-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/fd50dc59001f1634dae5799d75c9ea55/gtest-complete.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-mkdir;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-download;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-update;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-patch;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-configure;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-build;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\gtest\src\gtest-stamp\$(Configuration)\gtest-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\CMakeFiles\acfd0454f0cf03962abd7361f4a31848\gtest.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/acfd0454f0cf03962abd7361f4a31848/gtest.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\gtest</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/acfd0454f0cf03962abd7361f4a31848/gtest.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\gtest</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/acfd0454f0cf03962abd7361f4a31848/gtest.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\gtest</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/acfd0454f0cf03962abd7361f4a31848/gtest.rule;C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\$(Configuration)\gtest-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\gtest</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\test\CMakeFiles\gtest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Matt\Documents\NetBeansProjects\AssimpBuild\ZERO_CHECK.vcxproj">
+      <Project>{E73CACA9-E296-39AA-A992-03EB09AEB8DA}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

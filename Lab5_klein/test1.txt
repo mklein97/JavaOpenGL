@@ -1,0 +1,7 @@
+int func(int x)
+{
+    if (a == b
+    {
+        print("toot!");
+    }
+}

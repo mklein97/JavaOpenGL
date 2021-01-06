@@ -1,0 +1,5 @@
+//This is a test of a single line comment {]){(
+/* This is some more bonus text test stuff
+*/
+/* This should bring up an error
+

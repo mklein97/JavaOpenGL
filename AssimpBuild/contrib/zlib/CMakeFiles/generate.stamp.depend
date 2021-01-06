@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/contrib/zlib/CMakeLists.txt
+C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/share/cmake-3.9/Modules/CheckTypeSize.cmake
+C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/share/cmake-3.9/Modules/CheckIncludeFileCXX.cmake
+C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/share/cmake-3.9/Modules/CheckFunctionExists.cmake
+C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/share/cmake-3.9/Modules/CheckCSourceCompiles.cmake
+C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/contrib/zlib/zlib.pc.cmakein
+C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/contrib/zlib/zconf.h.cmakein

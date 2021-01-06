@@ -1,0 +1,36 @@
+# Blender MTL File: 'jackolantern.blend'
+# Material Count: 3
+
+newmtl pumpkinExterior
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.906752 0.934836
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd pumpkin2.jpg
+
+newmtl pumpkinInterior
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Ke pumpkin2a.jpg
+
+newmtl stem
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.906752 0.934836
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd stem.jpg
+map_Bump pumpkinnm.jpg

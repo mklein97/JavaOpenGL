@@ -1,0 +1,55 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/gtest"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/assimp-3.3.1/test/CMakeLists.txt"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/acfd0454f0cf03962abd7361f4a31848/gtest.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/fd50dc59001f1634dae5799d75c9ea55/gtest-complete.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-install.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-mkdir.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-download.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-update.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-patch.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-configure.rule"
+		},
+		
+		{
+			"file" : "C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/37b9fb83fdf25eb87b9a03200bf98955/gtest-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "gtest" ],
+		"name" : "gtest"
+	}
+}

@@ -1,0 +1,1 @@
+cmd='C:/Users/Matt/Documents/NetBeansProjects/cmake-3.9.1-win64-x64/bin/cmake.exe;-DCMAKE_BUILD_TYPE=;-Dgtest_force_shared_crt=ON;-Dgtest_disable_pthreads:BOOL=OFF;-DBUILD_GTEST=ON;-DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG:PATH=DebugLibs;-DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE:PATH=ReleaseLibs;-GVisual Studio 15 2017 Win64;<SOURCE_DIR><SOURCE_SUBDIR>'

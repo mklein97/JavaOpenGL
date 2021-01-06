@@ -1,0 +1,16 @@
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/UpdateAssimpLibsDebugSymbolsAndDLLs.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/uninstall.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/INSTALL.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/contrib/zlib/CMakeFiles/zlibstatic.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/contrib/zlib/CMakeFiles/INSTALL.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/code/CMakeFiles/assimp.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/code/CMakeFiles/INSTALL.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/tools/assimp_cmd/CMakeFiles/INSTALL.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/gtest.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/INSTALL.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/CMakeFiles/unit.dir
+C:/Users/Matt/Documents/NetBeansProjects/AssimpBuild/test/headercheck/CMakeFiles/INSTALL.dir
