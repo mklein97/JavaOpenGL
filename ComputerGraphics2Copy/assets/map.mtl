@@ -1,0 +1,33 @@
+newmtl floor
+Ns 96
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Ni 1
+d 1
+illum 2
+map_Kd floor-diffuse.jpg
+map_Bump floor-bump.jpg
+newmtl ceiling
+Ns 96
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Ke 0 0 0
+Ni 1
+d 1
+illum 2
+map_Kd ceiling-diffuse.png
+
+newmtl wall
+Ns 96
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.5 0.5 0.5
+Ke 0 0 0
+Ni 1
+d 1
+illum 2
+map_Kd wall-diffuse.jpg
+map_Bump wall-bump.jpg
